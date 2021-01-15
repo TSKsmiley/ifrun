@@ -1,6 +1,6 @@
 {
   "name": "ifrun",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "if a function is defined run it with given args",
   "main": "index.js",
   "scripts": {
