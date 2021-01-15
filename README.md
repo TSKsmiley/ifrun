@@ -1,44 +1,52 @@
-number - odd or even
+IF Run
 =======================================
 
-Have you ever needed to check if a number is odd or even. Now you can check if it is. 99.9% of the time it will be either odd or even
+When making something that can take a CallBack, you can use ifrun to only run if defined.
+
+the entirety of ifrun is 70 characters
 ***
 
-### List of features
+## List of features
 
-*   See if a number is odd or even
-*   See if a number is odd or even
+*   Runs a function with args if it is not null
 
-### Download & Installation
+## Download & Installation
 
+There are 2 ways to use if run Option 1 using the npm package and Option 2 without it
+
+## Using npm (Option 1)
+install
 ```shell 
-$ npm i number-oddoreven
+$ npm i ifrun
 ```
 
-### Code Demo
-
-importing
+import
 ```js
-var isoddOrEven = require("number-oddoreven");
+const ifRun = require("ifRun");
+```
+## Without using npm (Option 2)
+define
+```js
+const ifRun = (func, args)=>{if(!func) return; func(args)};
 ```
 
-Example usage
+# Example usage
 ```js
-if(isoddOrEven(3)){
-    console.log("The number is odd or even!");
+function test(hello){
+    console.log(hello);
 }
+
+ifRun(test,"sup");
 ```
 
 
 
 
 
-### Authors or Acknowledgments
+## Authors or Acknowledgments
 
 *   Arnar Freyr Ástvaldsson
-*   Anders Nyby Christensen 
-*   Frederik Hammer
 
-### License
+## License
 
     This project is licensed under the MIT License

@@ -1,7 +1,1 @@
-
-
-module.exports = function(func, args) {
-    console.log("hellos");
-    if(!func) return;
-    func(args)
-}
+module.exports = function(func, args) {if(!func) return; func(args)}
